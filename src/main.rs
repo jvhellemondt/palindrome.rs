@@ -35,4 +35,9 @@ mod tests {
     fn it_should_be_able_to_tell_that_was_it_a_rat_i_saw_is_a_palindrome() {
         assert_eq!(PalindromeChecker::is_a_palindrome("Was It A Rat I Saw"), true);
     }
+
+    #[test]
+    fn it_should_be_able_to_tell_that_never_odd_or_even_is_palindrome() {
+        assert_eq!(PalindromeChecker::is_a_palindrome("Never Odd or Even"), true);
+    }
 }
