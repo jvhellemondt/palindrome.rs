@@ -6,8 +6,9 @@ struct PalindromeChecker {}
 
 impl PalindromeChecker {
     fn is_a_palindrome(word: &str) -> bool {
-        let word_reversed: String = word.chars().rev().collect::<String>();
-        word.to_lowercase() == word_reversed.to_lowercase()
+        let word_trimmed: String = word.chars().filter(|c| !c.is_whitespace()).collect::<String>();
+        let word_reversed: String = word_trimmed.chars().rev().collect::<String>();
+        word_trimmed.to_lowercase() == word_reversed.to_lowercase()
     }
 }
 
