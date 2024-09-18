@@ -2,6 +2,14 @@ fn main() {
     println!("Hello, world!");
 }
 
+struct PalindromeChecker {}
+
+impl PalindromeChecker {
+    fn is_a_palindrome(word: &str) -> bool {
+        true
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
