@@ -24,4 +24,9 @@ mod tests {
     fn it_should_be_able_to_tell_that_bill_is_not_a_palindrome() {
         assert_eq!(PalindromeChecker::is_a_palindrome("bill"), false);
     }
+
+    #[test]
+    fn it_should_still_detect_a_palindrome_even_if_the_casing_is_off() {
+        assert_eq!(PalindromeChecker::is_a_palindrome("Mom"), true);
+    }
 }
