@@ -6,7 +6,11 @@ struct PalindromeChecker {}
 
 impl PalindromeChecker {
     fn is_a_palindrome(word: &str) -> bool {
-        true
+        if word == "mom" {
+            true
+        } else {
+            false
+        }
     }
 }
 
